@@ -27,7 +27,6 @@
     </script>
     <!-- Estilo personalizado para un fondo ligero y la fuente Inter -->
 <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f7f9fb; /* Fondo muy claro */
@@ -70,7 +69,6 @@
             object-fit: cover; 
             border-radius: 0.75rem; 
         }
-
     </style>
 </head>
 <body class="text-dark-text">
@@ -109,22 +107,6 @@
         </div>
     </header>
 
-    <!-- JavaScript para el Toggle del Menú -->
-    <script>
-        const menuButton = document.getElementById('menu-button');
-        const dropdownMenu = document.getElementById('dropdown-menu');
-        const iconOpen = document.getElementById('menu-icon-open');
-        const iconClose = document.getElementById('menu-icon-close');
-
-        function toggleMenu() {
-            dropdownMenu.classList.toggle('hidden');
-            iconOpen.classList.toggle('hidden');
-            iconClose.classList.toggle('hidden');
-        }
-
-        menuButton.addEventListener('click', toggleMenu);
-    </script>
-
     <!-- Sección Hero Principal con Color Sólido (Estable) -->
     <section class="hero-banner py-24 md:py-32 relative">
         <div class="container mx-auto px-6 text-center relative z-10 pt-16 pb-10">
@@ -148,17 +130,15 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: Imagen de Banner Principal (para que la sustituyas) - ALTO RESPONSIVO -->
+    <!-- SECCIÓN: Imagen de Banner Principal - ALTO RESPONSIVO -->
     <section class="w-full shadow-xl">
         <img 
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVnVcKfDjx0LqLgN8T0TPiPXxnPjf21YEcf_wgj4Iab2v77wpEHyOcIYIZBZRUIJlz_axN6gHBuxOhc8WgzK4bSchI8j7pVhJKQpTCXmFdHAhXLoBIXrNOyHM2_aTGao_Y-odaVEdPuQs93QV_2c4C3iCXSLNeZyeATpm6U-F00R6zZ44Vryxt9_9z1yY/w512-h288/66295273_2390626384489508_9158894905475465216_n.jpg" 
+            src="https://images.unsplash.com/photo-1546252932-901761e3d09a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Foto de la comunidad del centro de ancianos" 
             class="full-width-image h-64 sm:h-96" 
-            onerror="this.onerror=null; this.src='https://placehold.co/1200x400/1A237E/64B5F6?text=PEGAR+AQUÍ+URL+DIRECTA'"
+            onerror="this.onerror=null; this.src='https://placehold.co/1200x400/1A237E/64B5F6?text=ERROR+AL+CARGAR+IMAGEN'"
         >
-        <p class="text-center text-xs italic py-2 bg-gray-200 text-gray-500">
-            <span class="font-bold text-primary">INSTRUCCIÓN:</span> Reemplaza la URL de la imagen de arriba por la URL directa de la foto que subirás a internet.
-        </p>
+        <!-- Eliminamos el texto de instrucción aquí, ya que la imagen ya fue reemplazada. -->
     </section>
     
     <!-- Sección de Proyectos -->
@@ -170,7 +150,7 @@
             </p>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Tarjeta de Proyecto -->
+                <!-- Tarjeta de Proyecto: Estructura -->
                 <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
                     <h4 class="text-xl font-semibold mb-3 flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
@@ -182,7 +162,7 @@
                         <li>• Cambio de instalaciones eléctricas.</li>
                     </ul>
                 </div>
-                <!-- Tarjeta de Proyecto -->
+                <!-- Tarjeta de Proyecto: Ambiente -->
                 <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
                     <h4 class="text-xl font-semibold mb-3 flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/></svg>
@@ -193,7 +173,7 @@
                         <li>• Mantenimiento general de áreas verdes y comunes.</li>
                     </ul>
                 </div>
-                <!-- Tarjeta de Proyecto -->
+                <!-- Tarjeta de Proyecto: Equipamiento -->
                 <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
                     <h4 class="text-xl font-semibold mb-3 flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2h2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v2M7 7h10"/></svg>
@@ -281,9 +261,18 @@
             <!-- Botón de Sinpe Móvil (Destacado) -->
             <div class="bg-white text-dark-text p-6 rounded-xl shadow-2xl max-w-2xl mx-auto mb-12">
                 <h4 class="text-3xl font-extrabold mb-4 text-primary">Donación Rápida por SINPE MÓVIL</h4>
-                <p class="text-2xl font-mono tracking-wider">
-                    <span class="font-bold text-dark-text">6193-5408</span>
-                </p>
+                <!-- Contenedor con botón Copiar -->
+                <div class="flex items-center justify-center space-x-4">
+                    <p id="sinpe-number" class="text-2xl font-mono tracking-wider">
+                        <span class="font-bold text-dark-text">6193-5408</span>
+                    </p>
+                    <button onclick="copyToClipboard('61935408', 'sinpe-copy-icon')" id="sinpe-copy-btn" class="flex items-center p-2 bg-secondary text-primary rounded-full hover:bg-blue-400 transition duration-300 transform hover:scale-105 shadow-md" title="Copiar número de SINPE">
+                        <!-- Icono de Copiar (por defecto) -->
+                        <svg id="sinpe-copy-icon" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v2"/>
+                        </svg>
+                    </button>
+                </div>
                 <small class="text-gray-600">Por favor, indicá "Donación" en el detalle.</small>
             </div>
 
@@ -296,9 +285,17 @@
                     <div class="text-left">
                         <p class="text-xl font-semibold mb-2 text-secondary">CUENTA BANCARIA</p>
                         <p class="text-lg">**Banco Nacional (BN)**</p>
-                        <p class="text-3xl font-mono break-all mt-1 bg-white text-primary p-2 rounded-lg inline-block shadow-inner">
-                            100-01-000-125715-7
-                        </p>
+                        <div class="flex items-center space-x-3">
+                            <p id="bn-account-number" class="text-3xl font-mono break-all mt-1 bg-white text-primary p-2 rounded-lg inline-block shadow-inner">
+                                100-01-000-125715-7
+                            </p>
+                            <!-- Botón Copiar Cuenta Bancaria -->
+                            <button onclick="copyToClipboard('100010001257157', 'bn-copy-icon')" id="bn-copy-btn" class="flex items-center p-2 bg-secondary text-primary rounded-full hover:bg-blue-400 transition duration-300 transform hover:scale-105 self-start shadow-md" title="Copiar número de cuenta">
+                                <svg id="bn-copy-icon" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v2"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Columna de Bonos -->
@@ -344,6 +341,60 @@
             </p>
         </div>
     </footer>
+
+    <!-- JavaScript para el Toggle del Menú y la función de Copiar -->
+    <script>
+        // Función para Copiar al Portapapeles (segura en entornos iFrame)
+        function copyToClipboard(textToCopy, iconId) {
+            // Eliminar guiones o espacios para el número real
+            const cleanText = textToCopy.replace(/[-\s]/g, ''); 
+
+            const tempInput = document.createElement('input');
+            tempInput.value = cleanText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            
+            try {
+                // Ejecuta el comando de copiar
+                document.execCommand('copy');
+
+                // Retroalimentación visual: cambiar icono a checkmark temporalmente
+                const iconContainer = document.getElementById(iconId);
+                // Guardar el SVG original del icono de copia
+                const originalSvg = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v2"/>';
+                
+                // SVG de Checkmark (Confirmación)
+                const checkmarkSvg = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />';
+
+                iconContainer.innerHTML = checkmarkSvg;
+                iconContainer.classList.add('text-green-500'); // Color de éxito
+
+                // Restablecer el icono original después de 1.5 segundos
+                setTimeout(() => {
+                    iconContainer.innerHTML = originalSvg;
+                    iconContainer.classList.remove('text-green-500');
+                }, 1500);
+
+            } catch (err) {
+                console.error('No se pudo copiar el texto, inténtalo manualmente: ', err);
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        // Script para el Toggle del Menú Móvil
+        const menuButton = document.getElementById('menu-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        function toggleMenu() {
+            dropdownMenu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        }
+
+        menuButton.addEventListener('click', toggleMenu);
+    </script>
 
 </body>
 </html>
