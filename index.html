@@ -31,7 +31,7 @@
             font-family: 'Inter', sans-serif;
             background-color: #f7f9fb; /* Fondo muy claro */
         }
-        /* Estilo para el icono del corazón/manos que simula el logo del folleto */
+        /* Estilo para el icono del corazón/manos que simula el logo */
         .heart-hands {
             display: inline-flex;
             align-items: center;
@@ -130,15 +130,14 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: Imagen de Banner Principal - ALTO RESPONSIVO -->
+    <!-- SECCIÓN: Imagen de Banner Principal - ALTO RESPONSIVO (Usando la URL proporcionada con fallback) -->
     <section class="w-full shadow-xl">
         <img 
-            src="https://images.unsplash.com/photo-1546252932-901761e3d09a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-            alt="Foto de la comunidad del centro de ancianos" 
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAYfuSbNdyMMLMq8ZiTTC_xu32c_wDkjLbn0T-M5sowSAHR0sGyNS6R6QRqPZwKKGGH3V8zosM8xnZf0hFZbBoOEk1R11IezQnKtIUH_xB1xj6-8smpEAjXON1w51aRWDIuM7cHzfzZWmKa_sOOXzHpT4woCyxgiWg3yz9WTI95g6ZEftfaSJVjeqnCNg/s320-rw/66295273_2390626384489508_9158894905475465216_n.jpg" 
+            alt="Foto del Centro de Ancianos Hatillo San Sebastian con adultos mayores interactuando." 
             class="full-width-image h-64 sm:h-96" 
-            onerror="this.onerror=null; this.src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVnVcKfDjx0LqLgN8T0TPiPXxnPjf21YEcf_wgj4Iab2v77wpEHyOcIYIZBZRUIJlz_axN6gHBuxOhc8WgzK4bSchI8j7pVhJKQpTCXmFdHAhXLoBIXrNOyHM2_aTGao_Y-odaVEdPuQs93QV_2c4C3iCXSLNeZyeATpm6U-F00R6zZ44Vryxt9_9z1yY/w512-h288/66295273_2390626384489508_9158894905475465216_n.jpgN'"
+            onerror="this.onerror=null; this.src='https://placehold.co/1200x675/64B5F6/1A237E?text=Imagen+Temporal+del+Centro'"
         >
-        <!-- Eliminamos el texto de instrucción aquí, ya que la imagen ya fue reemplazada. -->
     </section>
     
     <!-- Sección de Proyectos -->
@@ -160,6 +159,7 @@
                         <li>• Cambio de techos, canoas y cielos.</li>
                         <li>• Reparación de pisos.</li>
                         <li>• Cambio de instalaciones eléctricas.</li>
+                        <li>• Adecuación de rampas y accesos.</li>
                     </ul>
                 </div>
                 <!-- Tarjeta de Proyecto: Ambiente -->
@@ -171,6 +171,7 @@
                     <ul class="space-y-2 text-gray-700 list-inside">
                         <li>• Pintura total de las instalaciones.</li>
                         <li>• Mantenimiento general de áreas verdes y comunes.</li>
+                        <li>• Adquisición de nuevo mobiliario de exterior.</li>
                     </ul>
                 </div>
                 <!-- Tarjeta de Proyecto: Equipamiento -->
@@ -180,8 +181,9 @@
                         Equipamiento
                     </h4>
                     <ul class="space-y-2 text-gray-700 list-inside">
-                        <li>• Compra de mobiliario nuevo y adaptado.</li>
+                        <li>• Compra de camas hospitalarias y barandas de seguridad.</li>
                         <li>• Reposición de equipos de fisioterapia.</li>
+                        <li>• Insumos y pañales para uso diario.</li>
                     </ul>
                 </div>
             </div>
@@ -231,8 +233,8 @@
         <div class="container mx-auto px-6 text-white text-center">
             <h3 class="text-4xl font-extrabold mb-6">Tu Aporte Transforma Vidas. ¡Dona Hoy!</h3>
 
-            <!-- Opciones de Contribución: Se apila en móvil -->
-            <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto mb-12">
+            <!-- Opciones de Contribución: Se centra en móvil -->
+            <div class="grid md:grid-cols-1 gap-10 max-w-xl mx-auto mb-12">
                 <!-- Opción 1: Padrino/Madrina o en Especie -->
                 <div class="bg-primary/80 p-8 rounded-xl shadow-2xl border border-white/30">
                     <h4 class="text-2xl font-bold mb-4 flex items-center justify-center">
@@ -246,16 +248,7 @@
                     </ul>
                 </div>
 
-                <!-- Opción 2: Beneficios Fiscales -->
-                <div class="bg-primary/80 p-8 rounded-xl shadow-2xl border border-white/30">
-                    <h4 class="text-2xl font-bold mb-4 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-secondary mr-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15.5l-3.5-3.5 1.41-1.41L11 14.6l5.09-5.09 1.41 1.41-6.5 6.5z"/></svg>
-                        Beneficios Fiscales
-                    </h4>
-                    <p class="text-lg">
-                        Si sos contribuyente, ¡excelente! Tu aporte es **deducible del impuesto de renta**. Guardá tu comprobante.
-                    </p>
-                </div>
+                <!-- Opción 2: Beneficios Fiscales - ELIMINADO Y MOVIDO A LA SECCIÓN DE BONOS -->
             </div>
 
             <!-- Botón de Sinpe Móvil (Destacado) -->
@@ -273,16 +266,16 @@
                         </svg>
                     </button>
                 </div>
-                <small class="text-gray-600">Por favor, indicá "Donación" en el detalle.</small>
+                <small class="text-gray-600 block mt-2">Por favor, indicá "Donación" en el detalle.</small>
             </div>
 
-            <!-- Información Bancaria y Bonos -->
-            <div class="max-w-4xl mx-auto bg-white/10 p-8 rounded-xl backdrop-blur-sm shadow-xl border border-white/20">
-                <h4 class="text-2xl font-bold mb-5">Transferencia Bancaria o Compra de Bonos</h4>
+            <!-- Información Bancaria (Solo transferencia) -->
+            <div class="max-w-4xl mx-auto bg-white/10 p-8 rounded-xl backdrop-blur-sm shadow-xl border border-white/20 mb-12">
+                <h4 class="text-2xl font-bold mb-5">Transferencia Bancaria (Colones)</h4>
 
-                <div class="grid md:grid-cols-2 gap-8">
+                <div class="text-left">
                     <!-- Columna de Cuenta -->
-                    <div class="text-left">
+                    <div>
                         <p class="text-xl font-semibold mb-2 text-secondary">CUENTA BANCARIA</p>
                         <p class="text-lg">**Banco Nacional (BN)**</p>
                         <div class="flex items-center space-x-3">
@@ -296,25 +289,62 @@
                                 </svg>
                             </button>
                         </div>
-                    </div>
-
-                    <!-- Columna de Bonos -->
-                    <div class="text-left">
-                        <p class="text-xl font-semibold mb-2 text-secondary">CONTAMOS CON BONOS DE</p>
-                        <div class="grid grid-cols-2 gap-2 text-lg font-bold">
-                            <span class="bg-white text-dark-text py-1 px-3 rounded-full shadow">₡10.000</span>
-                            <span class="bg-white text-dark-text py-1 px-3 rounded-full shadow">₡25.000</span>
-                            <span class="bg-white text-dark-text py-1 px-3 rounded-full shadow">₡50.000</span>
-                            <span class="bg-white text-dark-text py-1 px-3 rounded-full shadow">₡100.000</span>
-                        </div>
+                        <p class="text-sm italic mt-2">Cédula Jurídica 3-002-040226-06</p>
                     </div>
                 </div>
             </div>
+
+            <!-- NUEVA SECCIÓN DE BONOS: Ahora incluye el Beneficio para Contribuyentes -->
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-2xl border-l-4 border-secondary text-dark-text text-left">
+                <h4 class="text-2xl font-extrabold text-primary mb-3">Apoyá a los Adultos Mayores del Centro de Ancianos</h4>
+                <p class="text-gray-700 mb-6">
+                    En el Centro de Ancianos de San Sebastián trabajamos cada día para brindar bienestar, cuidado y acompañamiento a nuestros residentes. Hoy queremos invitarte a formar parte de esta causa tan importante.
+                </p>
+
+                <h5 class="text-xl font-bold mb-3 text-dark-text flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    Bonos de Ayuda
+                </h5>
+                
+                <div class="flex flex-wrap gap-3 mb-4">
+                    <span class="bg-primary text-white py-1.5 px-4 rounded-full font-bold shadow-md">₡10.000</span>
+                    <span class="bg-primary text-white py-1.5 px-4 rounded-full font-bold shadow-md">₡25.000</span>
+                    <span class="bg-primary text-white py-1.5 px-4 rounded-full font-bold shadow-md">₡50.000</span>
+                </div>
+
+                <p class="text-sm italic text-gray-600 mb-6">
+                    Cada bono que adquirís se convierte en alimentos, atención y momentos de alegría para nuestros adultos mayores.
+                </p>
+
+                <!-- Beneficio para Contribuyentes - INCLUIDO AQUÍ -->
+                <h5 class="text-xl font-bold mt-8 mb-2 text-dark-text flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                    Beneficio para Contribuyentes
+                </h5>
+                <p class="text-gray-700 mb-6">
+                    Si sos contribuyente, tu aporte es deducible del impuesto sobre la renta. Además de ayudar, obtendrás un beneficio fiscal.
+                </p>
+
+                <!-- Cómo colaborar -->
+                <h5 class="text-xl font-bold mb-2 text-dark-text flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    Cómo colaborar
+                </h5>
+                <ul class="text-lg space-y-1 mb-4">
+                    <li><span class="font-semibold">Teléfono:</span> <a href="tel:22543795" class="text-primary hover:underline">2254-3795</a></li>
+                    <li><span class="font-semibold">Email:</span> <a href="mailto:centrodhss@hotmail.com" class="text-primary hover:underline">centrodhss@hotmail.com</a></li>
+                    <li class="text-base font-light text-gray-600 mt-2">Recordá guardar tu comprobante.</li>
+                </ul>
+                <p class="text-sm text-gray-500">
+                    Gracias por apoyar esta misión y ayudarnos a ofrecer una vida digna y llena de cariño a quienes más lo necesitan.
+                </p>
+            </div>
+
         </div>
     </section>
 
     <!-- Pie de Página / Contacto -->
-    <footer class="bg-dark-text py-10">
+    <footer class="bg-dark-text py-10" id="contacto">
         <div class="container mx-auto px-6 text-center text-gray-300">
             <h4 class="text-2xl font-bold mb-4 text-white">Contacto y Ubicación</h4>
 
@@ -360,19 +390,26 @@
 
                 // Retroalimentación visual: cambiar icono a checkmark temporalmente
                 const iconContainer = document.getElementById(iconId);
-                // Guardar el SVG original del icono de copia
+                
+                // SVG de Copiar (Original)
                 const originalSvg = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v2"/>';
                 
                 // SVG de Checkmark (Confirmación)
                 const checkmarkSvg = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />';
+
+                // Almacenar el contenido original para restaurar correctamente
+                const originalContent = iconContainer.innerHTML;
 
                 iconContainer.innerHTML = checkmarkSvg;
                 iconContainer.classList.add('text-green-500'); // Color de éxito
 
                 // Restablecer el icono original después de 1.5 segundos
                 setTimeout(() => {
-                    iconContainer.innerHTML = originalSvg;
-                    iconContainer.classList.remove('text-green-500');
+                    // Solo restaurar si el contenido no ha cambiado por otra llamada de copyToClipboard
+                    if (iconContainer.innerHTML === checkmarkSvg) {
+                       iconContainer.innerHTML = originalSvg;
+                       iconContainer.classList.remove('text-green-500');
+                    }
                 }, 1500);
 
             } catch (err) {
