@@ -62,7 +62,6 @@
         .full-width-image {
             width: 100%;
             object-fit: cover; 
-            /* Se ha removido la altura fija de 400px de aquí para usar las clases h-64 y sm:h-96 */
         }
         /* Estilo para las imágenes en la sección de servicios (si se reinsertan) */
         .services-image {
@@ -76,21 +75,55 @@
 </head>
 <body class="text-dark-text">
 
-    <!-- Sección de Cabecera (Hero) - MODIFICADA PARA MÓVILES -->
-    <header class="bg-white shadow-md sticky top-0 z-20">
-        <div class="container mx-auto px-6 py-3 flex flex-col sm:flex-row justify-between items-center">
-            <!-- Título siempre visible -->
-            <h1 class="text-xl font-bold text-primary mb-3 sm:mb-0">Centro Ancianos Hatillo San Sebastian</h1>
+    <!-- Sección de Cabecera (Hero) - IMPLEMENTACIÓN DE MENÚ HAMBURGUESA -->
+    <header class="bg-white shadow-md sticky top-0 z-30">
+        <!-- En móvil (sm:hidden), usamos justify-end para poner el botón a la derecha. En desktop, usamos justify-between para separar el título del menú. -->
+        <div class="container mx-auto px-6 py-3 flex justify-end items-center sm:justify-between">
+            <!-- Título completo de la página, visible SÓLO en escritorio para ahorrar espacio en móvil -->
+            <h1 class="text-xl font-bold text-primary hidden sm:block">Centro Ancianos Hatillo San Sebastian</h1> 
             
-            <!-- Navegación: Se apila en móvil (flex-col) y vuelve a fila en sm (sm:flex-row) -->
-            <nav class="flex flex-col items-center space-y-2 sm:mt-0 sm:flex-row sm:space-y-0 sm:space-x-4">
+            <!-- Contenedor de Navegación: Oculto en móvil por defecto, visible en desktop -->
+            <nav id="mobile-menu" class="hidden sm:flex sm:space-x-4">
                 <a href="#proyectos" class="text-gray-600 hover:text-primary transition duration-300">Proyectos</a>
                 <a href="#servicios" class="text-gray-600 hover:text-primary transition duration-300">Servicios</a>
                 <!-- Botón de Donación destacado -->
                 <a href="#dona" class="bg-primary text-white py-2 px-4 rounded-full font-semibold hover:bg-indigo-900 transition duration-300 shadow-lg">DONAR AHORA</a>
             </nav>
+
+            <!-- Botón de Menú de Hamburguesa (visible solo en móvil) -->
+            <button id="menu-button" class="sm:hidden p-2 focus:outline-none">
+                <svg id="menu-icon-open" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="menu-icon-close" class="h-6 w-6 text-primary hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menú Desplegable (Solo visible en móvil al hacer clic) -->
+        <div id="dropdown-menu" class="sm:hidden hidden bg-white shadow-xl absolute w-full z-20 border-t border-gray-200">
+            <a href="#proyectos" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 border-b border-gray-100" onclick="toggleMenu()">Proyectos</a>
+            <a href="#servicios" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 border-b border-gray-100" onclick="toggleMenu()">Servicios</a>
+            <a href="#dona" class="block py-3 px-6 bg-secondary text-primary font-bold hover:bg-blue-400" onclick="toggleMenu()">DONAR AHORA</a>
         </div>
     </header>
+
+    <!-- JavaScript para el Toggle del Menú -->
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        function toggleMenu() {
+            dropdownMenu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        }
+
+        menuButton.addEventListener('click', toggleMenu);
+    </script>
 
     <!-- Sección Hero Principal con Color Sólido (Estable) -->
     <section class="hero-banner py-24 md:py-32 relative">
@@ -118,7 +151,7 @@
     <!-- SECCIÓN: Imagen de Banner Principal (para que la sustituyas) - ALTO RESPONSIVO -->
     <section class="w-full shadow-xl">
         <img 
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVnVcKfDjx0LqLgN8T0TPiPXxnPjf21YEcf_wgj4Iab2v77wpEHyOcIYIZBZRUIJlz_axN6gHBuxOhc8WgzK4bSchI8j7pVhJKQpTCXmFdHAhXLoBIXrNOyHM2_aTGao_Y-odaVEdPuQs93QV_2c4C3iCXSLNeZyeATpm6U-F00R6zZ44Vryxt9_9z1yY/w512-h288/66295273_2390626384489508_9158894905475465216_n.jpg" 
+            src="https://placehold.co/1200x400/1A237E/FFFFFF?text=PEGAR+AQUÍ+LA+URL+DIRECTA+DE+TU+IMAGEN+DE+COMUNIDAD" 
             alt="Foto de la comunidad del centro de ancianos" 
             class="full-width-image h-64 sm:h-96" 
             onerror="this.onerror=null; this.src='https://placehold.co/1200x400/1A237E/64B5F6?text=PEGAR+AQUÍ+URL+DIRECTA'"
