@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título Principal de la Ventana/Pestaña -->
+    <title>Centro Ancianos Hatillo San Sebastian | Invertí y Hacé un Cambio</title>
+    <!-- Incluye Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Tailwind para usar el color de marca y la fuente Inter -->
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Colores profesionales: Índigo Profundo y Azul Claro Suave
+                        'primary': '#1A237E', // Deep Indigo (Profesional, confianza)
+                        'secondary': '#64B5F6', // Muted Sky Blue (Acento, claridad)
+                        'dark-text': '#374151', // Gris oscuro para buena legibilidad
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Estilo personalizado para un fondo ligero y la fuente Inter -->
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Fondo muy claro */
+        }
+        /* Estilo para el icono del corazón/manos que simula el logo del folleto */
+        .heart-hands {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 120px;
+            /* Fondo de degradado con los nuevos colores Azules institucionales */
+            background: linear-gradient(135deg, #1A237E 0%, #64B5F6 100%);
+            border-radius: 50%;
+            /* Sombra más sutil para un look más profesional */
+            box-shadow: 0 8px 15px rgba(26, 35, 126, 0.3);
+            position: absolute; 
+            top: -60px; 
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+        .heart-hands svg {
+            filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+        }
+        /* Estilo para el banner Hero: Vuelve a color sólido para máxima estabilidad */
+        .hero-banner {
+            background-color: #1A237E; /* Índigo sólido */
+            position: relative;
+        }
+        /* Estilo para la imagen dentro de la sección de servicios */
+        .full-width-image {
+            width: 100%;
+            height: 400px; /* Altura fija para el banner principal */
+            object-fit: cover; 
+        }
+
+    </style>
+</head>
+<body class="text-dark-text">
+
+    <!-- Sección de Cabecera (Hero) -->
+    <header class="bg-white shadow-md sticky top-0 z-20">
+        <div class="container mx-auto px-6 py-3 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-xl font-bold text-primary">Centro Ancianos Hatillo San Sebastian</h1>
+            <nav class="mt-3 sm:mt-0 space-x-4">
+                <a href="#proyectos" class="text-gray-600 hover:text-primary transition duration-300">Proyectos</a>
+                <a href="#servicios" class="text-gray-600 hover:text-primary transition duration-300">Servicios</a>
+                <a href="#dona" class="bg-primary text-white py-2 px-4 rounded-full font-semibold hover:bg-indigo-900 transition duration-300 shadow-lg">DONAR AHORA</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero Principal con Color Sólido (Estable) -->
+    <section class="hero-banner py-24 md:py-32 relative">
+        <div class="container mx-auto px-6 text-center relative z-10 pt-16 pb-10">
+            <!-- Icono/Logo Simulado -->
+            <div class="heart-hands">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            
+            <!-- Título Principal -->
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4 text-white drop-shadow-lg mt-12">
+                Centro Ancianos Hatillo San Sebastian
+            </h2>
+            <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto mb-8 text-white drop-shadow">
+                Somos una organización con un servicio social y humano especializado en el bienestar integral de la persona adulta mayor.
+            </p>
+            <a href="#dona" class="inline-block bg-secondary text-primary text-lg font-bold py-3 px-8 rounded-lg shadow-xl hover:bg-blue-400 transition duration-300 transform hover:scale-105">
+                Regalá Apoyo, Invertí y Hacé un Cambio
+            </a>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Imagen de Banner Principal (para que la sustituyas) -->
+    <section class="w-full shadow-xl">
+        <img 
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVnVcKfDjx0LqLgN8T0TPiPXxnPjf21YEcf_wgj4Iab2v77wpEHyOcIYIZBZRUIJlz_axN6gHBuxOhc8WgzK4bSchI8j7pVhJKQpTCXmFdHAhXLoBIXrNOyHM2_aTGao_Y-odaVEdPuQs93QV_2c4C3iCXSLNeZyeATpm6U-F00R6zZ44Vryxt9_9z1yY/w512-h288/66295273_2390626384489508_9158894905475465216_n.jpg" 
+            alt="Foto de la comunidad del centro de ancianos" 
+            class="full-width-image"
+            onerror="this.onerror=null; this.src='https://placehold.co/1200x400/1A237E/64B5F6?text=PEGAR+AQUÍ+URL+DIRECTA'"
+        >
+        <p class="text-center text-xs italic py-2 bg-gray-200 text-gray-500">
+            <span class="font-bold text-primary">INSTRUCCIÓN:</span> Reemplaza la URL de la imagen de arriba por la URL directa de la foto que subirás a internet.
+        </p>
+    </section>
+    
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center text-primary mb-10">Proyectos y Necesidades Actuales</h3>
+            <p class="text-center text-lg text-gray-600 mb-12 max-w-4xl mx-auto">
+                Tu ayuda contribuye directamente a mantener y mejorar nuestras instalaciones, asegurando un entorno seguro y digno para nuestros adultos mayores.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de Proyecto -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                    <h4 class="text-xl font-semibold mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                        Estructura
+                    </h4>
+                    <ul class="space-y-2 text-gray-700 list-inside">
+                        <li>• Cambio de techos, canoas y cielos.</li>
+                        <li>• Reparación de pisos.</li>
+                        <li>• Cambio de instalaciones eléctricas.</li>
+                    </ul>
+                </div>
+                <!-- Tarjeta de Proyecto -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                    <h4 class="text-xl font-semibold mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/></svg>
+                        Ambiente
+                    </h4>
+                    <ul class="space-y-2 text-gray-700 list-inside">
+                        <li>• Pintura total de las instalaciones.</li>
+                        <li>• Mantenimiento general de áreas verdes y comunes.</li>
+                    </ul>
+                </div>
+                <!-- Tarjeta de Proyecto -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                    <h4 class="text-xl font-semibold mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2h2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v2M7 7h10"/></svg>
+                        Equipamiento
+                    </h4>
+                    <ul class="space-y-2 text-gray-700 list-inside">
+                        <li>• Compra de mobiliario nuevo y adaptado.</li>
+                        <li>• Reposición de equipos de fisioterapia.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios y Beneficios -->
+    <section id="servicios" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="lg:flex lg:items-center lg:space-x-12">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h3 class="text-3xl font-bold text-dark-text mb-4">Nuestro Impacto: Servicios Integrales</h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Ofrecemos un espacio de atención especializada donde el adulto mayor encuentra compañía, cuidado y oportunidades para una vida activa y plena.
+                    </p>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-center text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 4.016M2.438 10.74l1.378 1.378a2 2 0 002.828 0l2.828-2.828m8.484-8.484l-1.414 1.414m1.414-1.414l-1.414 1.414m-10.607-4.242l1.414 1.414m-1.414 1.414l1.414-1.414"/></svg>
+                            **Estimulación Cognitiva:** Para mantener la mente activa.
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 110 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                            **Actividades Culturales:** Promoción de la interacción social.
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l3-3m0 0l3 3m-3-3v14m-9 0h12a2 2 0 002-2v-3a2 2 0 00-2-2H3a2 2 0 00-2 2v3a2 2 0 002 2z"/></svg>
+                            **Terapia Física y Ocupacional:** Mantenimiento de la función física.
+                        </li>
+                    </ul>
+                </div>
+                <!-- Bloque de Identidad (Para mantener la estabilidad) -->
+                <div class="lg:w-1/2 p-8 bg-white rounded-xl shadow-lg border-l-4 border-secondary text-center">
+                    <p class="text-3xl font-extrabold text-primary mb-4">¡Somos esperanza!</p>
+                    <p class="text-lg text-gray-700">
+                        Nuestra misión es cuidar y servir a la población adulta mayor de Hatillo y San Sebastián, promoviendo su desarrollo y manteniendo su función física, mental y social.
+                    </p>
+                    <p class="text-sm italic mt-4 text-gray-500">
+                        Especialistas en servicio social y humano.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Donación (Call to Action principal) -->
+    <section id="dona" class="py-20 bg-primary">
+        <div class="container mx-auto px-6 text-white text-center">
+            <h3 class="text-4xl font-extrabold mb-6">Tu Aporte Transforma Vidas. ¡Dona Hoy!</h3>
+
+            <!-- Opciones de Contribución -->
+            <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto mb-12">
+                <!-- Opción 1: Padrino/Madrina o en Especie -->
+                <div class="bg-primary/80 p-8 rounded-xl shadow-2xl border border-white/30">
+                    <h4 class="text-2xl font-bold mb-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-secondary mr-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-3.86 0-7 3.14-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        Apoyo Sostenido
+                    </h4>
+                    <ul class="text-lg space-y-3">
+                        <li>Puedes ser **Padrino o Madrina**.</li>
+                        <li>Apoyá mensualmente con una contribución **monetaria o en especie**.</li>
+                        <li>¡Es una promesa de bienestar constante!</li>
+                    </ul>
+                </div>
+
+                <!-- Opción 2: Beneficios Fiscales -->
+                <div class="bg-primary/80 p-8 rounded-xl shadow-2xl border border-white/30">
+                    <h4 class="text-2xl font-bold mb-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-secondary mr-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15.5l-3.5-3.5 1.41-1.41L11 14.6l5.09-5.09 1.41 1.41-6.5 6.5z"/></svg>
+                        Beneficios Fiscales
+                    </h4>
+                    <p class="text-lg">
+                        Si sos contribuyente, ¡excelente! Tu aporte es **deducible del impuesto de renta**. Guardá tu comprobante.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Botón de Sinpe Móvil (Destacado) -->
+            <div class="bg-white text-dark-text p-6 rounded-xl shadow-2xl max-w-2xl mx-auto mb-12">
+                <h4 class="text-3xl font-extrabold mb-4 text-primary">Donación Rápida por SINPE MÓVIL</h4>
+                <p class="text-2xl font-mono tracking-wider">
+                    <span class="font-bold text-dark-text">6193-5408</span>
+                </p>
+                <small class="text-gray-600">Por favor, indicá "Donación" en el detalle.</small>
+            </div>
+
+            <!-- Información Bancaria y Bonos -->
+            <div class="
